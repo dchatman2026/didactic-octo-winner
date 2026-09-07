@@ -21,3 +21,9 @@ ul {
 .block {
   display: block;
 } 
+nav {
+  display: flex;
+  justify-content: space-between; /* Spreads the links out across the bar */
+  align-items: center;          /* Keeps them centered vertically */
+  gap: 1rem;                    /* Puts clean space between each link */
+}
