@@ -21,7 +21,6 @@ ul {
 .block {
   display: block;
 } 
-/* 1. FLEXBOX (For your Navigation bar) */
 nav {
   display: flex;
   justify-content: space-between;
@@ -29,7 +28,6 @@ nav {
   gap: 1rem;
 }
 
-/* 2. GRID (For your Skills list section) */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 equal columns on desktop */
@@ -38,7 +36,6 @@ nav {
   padding: 0;
 }
 
-/* 3. MEDIA QUERY (Changes Grid to 1 column on smaller screens) */
 @media (max-width: 600px) {
   .skills-grid {
     grid-template-columns: 1fr; /* Drops down to a single stacked column */
