@@ -81,7 +81,6 @@ nav {
   cursor: pointer;
 }
 
-/* Media query for mobile screen scaling */
 @media (max-width: 600px) {
   .contact-form {
     max-width: 100%;
@@ -89,5 +88,36 @@ nav {
 
   .contact-form button {
     width: 100%;
+  }
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1rem;                            
+  list-style: none;
+  padding: 0;
+}
+
+.schedule-table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.schedule-table th {
+  background-color: #f4f4f4;
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
