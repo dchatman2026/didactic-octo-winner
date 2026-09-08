@@ -21,9 +21,31 @@ ul {
 .block {
   display: block;
 } 
+/* 1. FLEXBOX (For your Navigation bar) */
 nav {
   display: flex;
-  justify-content: space-between; /* Spreads the links out across the bar */
-  align-items: center;          /* Keeps them centered vertically */
-  gap: 1rem;                    /* Puts clean space between each link */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* 2. GRID (For your Skills list section) */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns on desktop */
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+/* 3. MEDIA QUERY (Changes Grid to 1 column on smaller screens) */
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* Drops down to a single stacked column */
+  }
+
+  nav {
+    flex-direction: column; /* Stacks nav links vertically on mobile */
+    gap: 0.5rem;
+  }
 }
